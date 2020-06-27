@@ -20,24 +20,19 @@ Table of Contents
 
 ## 3.Training 
 
-## 
-
 ## 4.Evaluation
 To evaluate the model performace:
 'Python mixblaze_1_6_4.py'
 You will see the memory,MAdd,Flops,MemR+W of each layer and total.
 
 ## 5.Performance
-Model :
+Total params: 65,498
 
-Total params: 44,234
+Total memory: 13.89MB
 
-Total memory: 13.44MB
+Total MAdd: 102.03MMAdd
 
-Total MAdd: 93.77MMAdd
+Total Flops: 52.56MFlops
 
-Total Flops: 48.39MFlops
-
-Total MemR+W: 26.91MB
-
+Total MemR+W: 27.74MB
 
