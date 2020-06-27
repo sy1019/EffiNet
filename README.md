@@ -1,15 +1,7 @@
 # EffiNet
 
-A PyTorch implementation of the 2020 paper -- 
-Table of Contents
--	Installation
--	Datasets
--	Train
--	Evaluate
--	Performance
--	Future Work
--	Reference
-       
+A PyTorch implementation of the 2020 paper
+
 ## 1.Installation
 -	Install PyTorch by selecting your environment on the website and running the appropriate command.
 -	install numpy 
