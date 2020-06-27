@@ -1,6 +1,6 @@
 # EffiNet
 
-A PyTorch implementation of the 2020 paper, submitted to IEEE SIGNAL PROCESSING LETTERS
+A PyTorch implementation of the 2020 paper, submitted to IEEE SIGNAL PROCESSING LETTERS.
 
 ## 1.Installation
 -	Install PyTorch by selecting your environment on the website and running the appropriate command.
@@ -12,7 +12,7 @@ For our breast cancer diagnosis work , use Camelyon16 benchmark. The training da
 Currently our experiments are carried out on the Camelyon16 benchmark (see https://camelyon16.grand-challenge.org/ for downloading).
 
 ## 3.Training 
-For the patch-based classification model generation stage, we directly extract massive image patches according to the coordinates released by NCRF[1](see https://github.com/baidu-research/NCRF), which is a public resource associated with Camelyon16. It contains the coordinates of over 400k representative level-0 patches. We further employed different data augmentation methods like rotation, flipping, and color jittering. SGD with a momentum of 0.9 is used to optimize the network and the learning rate is fixed to 0.001. We conduct all the experiments using PyTorch on a workstation with one NVIDIA TITAN Xp GPU.
+Since our work involves patch-based classification model generation stage, we directly extract massive image patches according to the coordinates released by NCRF[1](see https://github.com/baidu-research/NCRF), which is a public resource associated with Camelyon16. It contains the coordinates of over 400k representative level-0 patches. We further employed different data augmentation methods like rotation, flipping, and color jittering. SGD with a momentum of 0.9 is used to optimize the network and the learning rate is fixed to 0.001. We conduct all the experiments using PyTorch on a workstation with one NVIDIA TITAN Xp GPU.
 
 We have provided our EffiNet.ckpt in the checkpoint forlder. 
 You can download it for further experiments.
