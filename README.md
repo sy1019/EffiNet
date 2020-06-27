@@ -37,6 +37,7 @@ Total MemR+W: 27.74MB
 ## Reference
 [1] Li, Y., Ping, W.: Cancer metastasis detection with neural conditional random field.
 arXiv preprint arXiv:1806.07064 (2018)
+
 [2] Wang, D., Khosla, A., Gargeya, R., Irshad, H., Beck, A.H.: Deep learning for
 identifying metastatic breast cancer. arXiv preprint arXiv:1606.05718 (2016)
 
