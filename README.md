@@ -13,11 +13,13 @@ You can see https://camelyon16.grand-challenge.org/ for download.
 
 ## 3.Training 
 For the patch-based classification model generation stage, we directly extract massive image patches according to the coordinates released by NCRF[1], which is a public resource associated with Camelyon16. It contains the coordinates of over 400k representative level-0 patches. We further employed different data augmentation methods like rotation, flipping, and color jittering. SGD with a momentum of 0.9 is used to optimize the network and the learning rate is fixed to 0.001. For method without the detection model, you can use the Otsu algorithm to to exclude the background regions of each given slide firstly, and then a sliding-window breast cancer diagnosis method can be performed on all the foreground pixels.
+
 We have provided our best.ckpt in the checkpoint forlder. Except that the model used is different, we have implemented the same diagnostic process as Wang et al.[2], and improved the AUC score from the reported 0.925 to 0.9342. 
 You can download it for further experiments.
 
 ## 4.Evaluation
 To evaluate the model performace:
+
 'Python mixblaze_1_6_3.py'
 
 You will see the memory, MAdd, Flops, MemR+W of each layer and total.
