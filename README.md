@@ -9,24 +9,23 @@ A PyTorch implementation of the 2020 paper
 
 ## 2.Datasets
 For our breast cancer diagnosis work , use Camelyon16 benchmark. The training data consists of 270 WSIs (160 normal and 110 tumor) with pixel-level annotations. The test data consists of 129 WSIs. 22 and 27 of them contain macro and micro tumors, respectively. 
-You can see https://camelyon16.grand-challenge.org/ for download.
+You can see https://camelyon16.grand-challenge.org/ for downloading.
 
 ## 3.Training 
-For the patch-based classification model generation stage, we directly extract massive image patches according to the coordinates released by NCRF[1], which is a public resource associated with Camelyon16. It contains the coordinates of over 400k representative level-0 patches. We further employed different data augmentation methods like rotation, flipping, and color jittering. SGD with a momentum of 0.9 is used to optimize the network and the learning rate is fixed to 0.001. For method without the detection model, you can use the Otsu algorithm to to exclude the background regions of each given slide firstly, and then a sliding-window breast cancer diagnosis method can be performed on all the foreground pixels.
+For the patch-based classification model generation stage, we directly extract massive image patches according to the coordinates released by NCRF[1](see https://github.com/baidu-research/NCRF), which is a public resource associated with Camelyon16. It contains the coordinates of over 400k representative level-0 patches. We further employed different data augmentation methods like rotation, flipping, and color jittering. SGD with a momentum of 0.9 is used to optimize the network and the learning rate is fixed to 0.001. We conduct all the experiments using PyTorch on a workstation with one NVIDIA TITAN Xp GPU.
 
-We have provided our best.ckpt in the checkpoint forlder. Except that the model used is different, we have implemented the same diagnostic process as Wang et al.[2], and improved the AUC score from the reported 0.925 to 0.9342. 
+We have provided our best.ckpt in the checkpoint forlder. 
 You can download it for further experiments.
 
 ## 4.Evaluation
 To evaluate the model performace:
 
-'Python mixblaze_1_6_3.py'
+'Python EffiNet.py'
 
 You will see the memory, MAdd, Flops, MemR+W of each layer and total.
 
 ## 5.Performance
 Total params: 65,498
-.
 
 Total memory: 13.89MB
 
