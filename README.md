@@ -4,8 +4,8 @@ A PyTorch implementation of the 2020 paper[1].
 
 ## 1.Installation
 -	Install PyTorch (1.4.0).
--	install numpy (1.17.2).
--	install torchstat (0.0.7).
+-	Install numpy (1.17.2).
+-	Install torchstat (0.0.7).
 
 ## 2.Datasets
 For our breast cancer diagnosis work, use Camelyon16 benchmark. The training data consists of 270 WSIs (160 normal and 110 tumor) with pixel-level annotations. The test data consists of 129 WSIs. 22 and 27 of them contain macro and micro tumors, respectively. 
