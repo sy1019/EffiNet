@@ -1,6 +1,6 @@
 # SEffiNet
 
-The code is associated with the following paper: S. Liu, J. Ren, Z. Chen, et al., SEffiDiag: a Super Efficient Framework forBreast Cancer Diagnosis in Multi-Gigapixel Whole Slide Images, which is currently in its peer-review process.
+The code is associated with the following paper: S. Liu, J. Ren, Z. Chen, et al., SEffiDiag: a Super Efficient Framework for Breast Cancer Diagnosis in Multi-Gigapixel Whole Slide Images, which is currently in its peer-review process.
 
 ## 1.Installation
 -	Install PyTorch (1.4.0).
